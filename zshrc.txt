@@ -1,0 +1,8 @@
+...
+
+# adding to environment variable
+export PATH=$PATH:~/myscripts/cpp/
+
+# creating aliases for easy-typing
+alias runc=~/myscripts/cpp/runc.sh
+alias runj=~/myscripts/java/runj.sh
