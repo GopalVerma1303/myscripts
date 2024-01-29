@@ -8,7 +8,7 @@ fi
 filename="$1"
 output_file="${filename%.*}"
 
-g++ -o "$output_file" "$filename" && ./"$output_file"
+g++ -std=c++17 -o "$output_file" "$filename" && ./"$output_file"
 
 if [ $? -eq 0 ]; then
 	echo "\n\nSuccessful!❤️"
