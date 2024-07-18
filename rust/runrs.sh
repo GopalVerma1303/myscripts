@@ -8,7 +8,7 @@ fi
 filename="$1"
 output_file="${filename%.*}"
 
-g++ -std=c++20 -o "$output_file" "$filename" && ./"$output_file"
+rustc "$filename" -o "$output_file" && ./"$output_file"
 
 if [ $? -eq 0 ]; then
 	echo "\n\nSuccessful!❤️"
